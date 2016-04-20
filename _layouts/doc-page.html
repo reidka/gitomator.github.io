@@ -17,6 +17,11 @@ layout: default
 <div id="main" role="main">
   {% include sidebar.html %}
 
+  <a class="edit-doc-page-link"
+     href="https://github.com/gitomator/gitomator.github.io/blob/master/_doc/{{page.doc_source}}.md" target="_blank">
+     <i class="fa fa-pencil" aria-hidden="true"></i> Edit on GitHub
+  </a>
+
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}

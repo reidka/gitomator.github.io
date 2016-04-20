@@ -1,16 +1,17 @@
-# main links links
+# main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Docs"
+    url: /docs/overview/
+  # - title: "About"
+  #   url: /about
+  - title: "GitHub"
+    url: https://github.com/gitomator
 
-  - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/
 
-  - title: "Sample Posts"
-    url: https://mmistakes.github.io/minimal-mistakes/year-archive/
-
-  - title: "Sample Pages"
-    url: https://mmistakes.github.io/minimal-mistakes/page-archive/
-
-  - title: "Sample Collections"
-    url: https://mmistakes.github.io/minimal-mistakes/collection-archive/
+docs:
+  - title: Introduction
+    children:
+      - title: "What is Gitomator?"
+        url: /docs/overview/
+      # - title: "Quick-Start"
+      #   url: /docs/quick-start/

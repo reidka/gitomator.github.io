@@ -11,7 +11,8 @@ title                    : "Gitomator"
 title_separator          : "-"
 name                     : "Joey Freund"
 description              : "Automation tools for software educator"
-url                      : "https://gitomator.github.io"
+# TODO: Uncomment the `url`
+url                      : #"https://gitomator.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -61,9 +62,9 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Joey Freund"
-  avatar           : #"bio-photo.jpg"
-  bio              : #"I am an amazing person."
+  name             : "Gitomator"
+  avatar           : "logo.png"
+  bio              : "Built for software educators, by software educators"
   location         : #"Somewhere"
   email            :
   uri              :
@@ -73,7 +74,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : gitomator
   google_plus      :
   keybase          :
   instagram        :
@@ -143,6 +144,26 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+
+
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "docs"
 
 
 # Outputting
