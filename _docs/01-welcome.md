@@ -42,7 +42,7 @@ And, with a single command, run the following operations in your GitHub organiza
 
 # What is it good for?
 
-Running a software engineering course at a University, for example.          
+Running software engineering courses at a University, for example.          
 
 In fact, the prototype of Gitomator was used to automate the workflow of coding
 assignments in an advanced software engineering course at the University of Toronto.
