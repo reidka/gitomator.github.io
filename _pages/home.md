@@ -24,7 +24,7 @@ feature_row:
     alt: "100% free"
     title: "Free & Open-Source"
     excerpt: "Gitomator was build for software educators, by software educators. It is free to use however you want, under the MIT License. "
-    url: "/docs/welcome/"
+    url: "/docs/contributing/"
     btn_label: "Learn More"
 ---
 

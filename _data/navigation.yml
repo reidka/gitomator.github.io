@@ -17,3 +17,5 @@ docs:
         url: /docs/quick-start/
       - title: "Architecture"
         url: /docs/architecture/
+      - title: "Contributing"
+        url: /docs/contributing/
