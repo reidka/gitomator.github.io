@@ -36,8 +36,8 @@ And, with a single command, run the following operations in your GitHub organiza
 
  * Create repos `repo1`, `repo2` and `repo3`.
  * Push changes to these repos (from an existing repo, `starter_code`).
- * User access - Grant `Alice`, `Bob` and `Charlie` read permission to `repo1`, `repo2` and `repo3`, respectively.
- * Team access - Grant `TAs` write permission to `repo3`,
+ * Grant the users `Alice`, `Bob` and `Charlie` read permission to `repo1`, `repo2` and `repo3`, respectively.
+ * Grant the team `TAs` write permission to `repo3`,
  * Optionally, by specifying a command-line flag, enable Travis CI on all repos.
 
 # What is it good for?
