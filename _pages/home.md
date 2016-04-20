@@ -22,7 +22,7 @@ feature_row:
     btn_label: "Learn More"
   - image_path: splash-icon-free.svg
     alt: "100% free"
-    title: "Open-source"
+    title: "Free & Open-Source"
     excerpt: "Gitomator was build for software educators, by software educators. It is free to use however you want, under the MIT License. "
     url: "/docs/overview/"
     btn_label: "Learn More"
