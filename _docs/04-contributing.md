@@ -8,7 +8,7 @@ excerpt: "Let's build Gitomator together"
 modified: 2016-04-20T15:54:02-04:00
 ---
 
-Gitomator is free, open-source (MIT license), contributor-friendly project.       
+Gitomator is a free, open-source (MIT license), contributor-friendly project.       
 You can find all the [Gitomator projects on GitHub](https://github.com/gitomator).      
 
 Please, feel free to
