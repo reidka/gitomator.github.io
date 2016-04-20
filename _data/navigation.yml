@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "Docs"
-    url: /docs/overview/
+    url: /docs/welcome/
   # - title: "About"
   #   url: /about
   - title: "GitHub"
@@ -11,7 +11,9 @@ main:
 docs:
   - title: Introduction
     children:
-      - title: "What is Gitomator?"
-        url: /docs/overview/
-      # - title: "Quick-Start"
-      #   url: /docs/quick-start/
+      - title: "Welcome"
+        url: /docs/welcome/
+      - title: "Quick-Start"
+        url: /docs/quick-start/
+      - title: "Architecture"
+        url: /docs/architecture/
