@@ -15,7 +15,7 @@ Gitomator is a set of libraries and command-line tools, built to help software e
  * Use the existing automation tasks, or create your own.
  * Plug-in architecture allows you to use the same API to access different service providers.
  * Easy to extend with new services, providers and tasks.
- * Free, Open-Source (MIT license), contributor-friendly project. Please open issues and/or submit pull-requests on [GitHub](https://github.com/gitomator).
+ * Free, Open-Source (MIT license), contributor-friendly project.
 
 
 # What can I do with it?
