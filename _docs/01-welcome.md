@@ -14,7 +14,7 @@ Gitomator is a set of libraries and command-line tools, built to help software e
  * Automate your workflow around services like GitHub & Travis CI.
  * Use the existing automation tasks, or create your own.
  * Plug-in architecture allows you to use the same API to access different service providers.
- * Extensible architecture allows you easily add new services, providers and tasks.
+ * Easy to extend with new services, providers and tasks.
  * Free, Open-Source (MIT license), contributor-friendly project. Please open issues and/or submit pull-requests on [GitHub](https://github.com/gitomator).
 
 
