@@ -12,19 +12,19 @@ feature_row:
     alt: "Powerful"
     title: "Powerful"
     excerpt: "Automate your workflow  - Create repos and teams, manage access permissions, enable/disable CI, and more. Use a built-in workflow or create you own - Gitomator is designed to be extensible."
-    url: "/docs/overview/"
+    url: "/docs/welcome/"
     btn_label: "Learn More"
   - image_path: splash-icon-pluggable.svg
     alt: "Fully Pluggable"
     title: "Fully Pluggable"
     excerpt: "Need to store your repos on a local server? Want to use a custom CI? No problem. Gitomator allows you to mix & match different services in your automated workflow."
-    url: "/docs/overview/"
+    url: "/docs/architecture/"
     btn_label: "Learn More"
   - image_path: splash-icon-free.svg
     alt: "100% free"
     title: "Free & Open-Source"
     excerpt: "Gitomator was build for software educators, by software educators. It is free to use however you want, under the MIT License. "
-    url: "/docs/overview/"
+    url: "/docs/welcome/"
     btn_label: "Learn More"
 ---
 
