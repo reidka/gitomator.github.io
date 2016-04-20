@@ -8,4 +8,4 @@ excerpt: "Getting started with Gitomator"
 modified: 2016-04-20T15:54:02-04:00
 ---
 
-TODO: Feel free to add content to this page (see link to your right)
+TODO: Feel free to add content to this page (using the "Edit on GitHub" link, to your right)
