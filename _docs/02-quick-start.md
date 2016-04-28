@@ -74,16 +74,13 @@ You will see informative log messages printed to the console.
 When the script is done, go to the repositories page of your GitHub organization (at `https://github.com/YOUR-GITHUB-ORGANIZATION`).
 You should see 3 new repositories.
 
-Notice that the repos are not empty.      
-Each repo contains all the commits from (the `master` branch of)
+Notice that the repos are not empty. Each repo contains all the commits from (the `master` branch of)
 [`gitomator/gitomator-classroom`](https://github.com/gitomator/gitomator-classroom).
 
 ## Delete the repositories
 
 Gitomator does not have a `delete-repos` task (we don't want anybody to
-accidentally delete all of their students' repos).
-
-Instead, let's delete the test repositories using the interactive console. You can start the console with the command:
+accidentally delete all of their students' repos). Instead, let's delete the test repositories using the interactive console. You can start the console with the command:
 
 ```sh
 $ bin/console
