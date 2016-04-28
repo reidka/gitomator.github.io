@@ -19,7 +19,7 @@ Make sure your have:
 
 ## Create `~/.gitomator`
 
-Create the file, `~/.gitomator`, containing your credentials and
+Create the file `~/.gitomator`, containing your credentials and
 the name of your GitHub organization:
 
 ```yaml
