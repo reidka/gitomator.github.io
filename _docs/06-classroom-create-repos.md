@@ -7,4 +7,37 @@ title: "Create & update repositories"
 modified: 2016-04-20T15:54:02-04:00
 ---
 
-TODO: Write this page ...
+Usage:
+
+```sh
+ $ bin/task/create-repos CONFIG
+```
+
+### Minimal configuration
+
+Create a bunch of empty repos.
+
+```yaml
+repos:
+  - repo-001
+  - repo-002
+  - repo-003
+  - repo-004
+```
+
+### Minimal configuration + `source_repo`
+
+The `master` branch of the specified `source_repo` will be pushed to each repo that is created.
+
+ > tip: You can run the `create-repos` task with the `--update-existing` flag
+ > in order to push recent changes from the `source_repo` to existing repos
+ > (assuming there are no Git conflicts).
+
+```yaml
+source_repo: repo-with-starter-code
+repos:
+  - repo-001
+  - repo-002
+  - repo-003
+  - repo-004
+```
