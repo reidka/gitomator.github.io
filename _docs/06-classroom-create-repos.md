@@ -24,7 +24,7 @@ repos:
   - repo-004
 ```
 
-### Minimal configuration + `source_repo`
+### Specify `source_repo`
 
 The `master` branch of the specified `source_repo` will be pushed to each repo that is created.
 
