@@ -16,7 +16,7 @@
 
           <a href="{{ domain }}{{ nav.url }}"><span class="nav__sub-title">{{ nav.title }}</span></a>
         {% else %}
-          <span class="nav__sub-title">{{ nav.title }}</span>
+          <span class="nav__sub-title">{{ nav.title | markdownify}}</span>
         {% endif %}
 
         {% if nav.children != null %}
@@ -36,7 +36,7 @@
               {% assign active = "" %}
             {% endif %}
 
-            <li><a href="{{ domain }}{{ child.url }}" class="{{ active }}">{{ child.title }}</a></li>
+            <li><a href="{{ domain }}{{ child.url }}" class="{{ active }}">{{ child.title | markdownify | remove: "<p>" | remove: "</p>" }}</a></li>
           {% endfor %}
         </ul>
         {% endif %}
@@ -44,5 +44,3 @@
     {% endfor %}
   </ul>
 </nav>
-
-
