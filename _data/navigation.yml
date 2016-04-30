@@ -19,19 +19,21 @@ docs:
         url: /docs/architecture/
       - title: "Contributing"
         url: /docs/contributing/
-  - title: Classroom - Automation Tasks
+  - title: Classroom
     children:
       - title: "The basics"
         url: /docs/classroom/basics
-      - title: "Create & update repos"
+  - title: Tasks
+    children:
+      - title: "create-repos"
         url: /docs/classroom/create-repos
-      - title: "Create teams & update memberships"
+      - title: "update-teams"
         url: /docs/classroom/teams
-      - title: "Set access permissions"
+      - title: "update-access-permissions"
         url: /docs/classroom/access-permissions
-      - title: "Enable/disable CI"
+      - title: "enable-ci & disable-ci"
         url: /docs/classroom/ci
-      - title: "Clone repos"
+      - title: "clone-repos"
         url: /docs/classroom/clone-repos
-      - title: "Auto-mark"
+      - title: "auto-mark"
         url: /docs/classroom/auto-mark
