@@ -5,7 +5,6 @@ permalink: /docs/contributing/
 
 title: "Contributing"
 excerpt: "Let's build Gitomator together"
-modified: 2016-04-20T15:54:02-04:00
 ---
 
 Gitomator is a free, open-source (MIT license), contributor-friendly project.       

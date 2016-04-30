@@ -5,7 +5,6 @@ permalink: /docs/architecture/
 
 title: "Architecture"
 excerpt: "Under the hood of Gitomator"
-modified: 2016-04-20T15:54:02-04:00
 ---
 
 Gitomator is made up of a number of libraries:

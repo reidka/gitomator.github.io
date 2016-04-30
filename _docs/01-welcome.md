@@ -5,7 +5,6 @@ permalink: /docs/welcome/
 
 title: "Welcome"
 excerpt: "Welcome"
-modified: 2016-04-20T10:43:02-04:00
 ---
 
 

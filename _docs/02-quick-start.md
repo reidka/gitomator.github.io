@@ -5,7 +5,6 @@ permalink: /docs/quick-start/
 
 title: "Quick-Start"
 excerpt: "Getting started with Gitomator"
-modified: 2016-04-20T15:54:02-04:00
 ---
 
 ## Install Dependencies
