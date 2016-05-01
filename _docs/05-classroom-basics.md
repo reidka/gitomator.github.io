@@ -12,10 +12,17 @@ excerpt: "The main concepts behind Gitomator"
 ## YAML configuration files
 
 Configuration and data are provided as [YAML](http://yaml.org/) text files.
-
 YAML is "a human friendly data serialization standard". In other words,
-it's nicer-looking JSON. The point is, your don't really need to learn YAML,
-it's designed to be easy-to-read by human.
+it's nicer-looking JSON.
+
+* Text files are a good "lowest common denominator".  
+   * Easy to generate and/or edit.
+   * Don't require any specific database software.
+* Easy to handle special cases by re-running a task with a different config file.
+   * Ex: Run auto-marker with a different deadline for students who
+  require time extension.
+* No need to "learn YAML", it's designed to be easy-to-read by human.
+
 
 ## Pluggable services
 

@@ -23,13 +23,15 @@ docs:
     children:
       - title: "The basics"
         url: /docs/classroom/basics
+      - title: "Configuration Files"
+        url: /docs/classroom/config-files
   - title: Tasks
     children:
-      - title: "create-repos"
+      - title: "make-repos"
         url: /docs/classroom/create-repos
-      - title: "update-teams"
+      - title: "make-teams"
         url: /docs/classroom/teams
-      - title: "update-access-permissions"
+      - title: "make-access-permissions"
         url: /docs/classroom/access-permissions
       - title: "enable-ci & disable-ci"
         url: /docs/classroom/ci
