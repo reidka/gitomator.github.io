@@ -3,7 +3,7 @@ layout: doc-page
 doc_source: 08-classroom-access-permissions
 permalink: /docs/classroom/access-permissions
 
-title: "`update-access-permissions`"
+title: "`make-access-permissions`"
 ---
 
 Set who (user or team) has what permissions (e.g. read or write) to which repo.

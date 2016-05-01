@@ -3,7 +3,7 @@ layout: doc-page
 doc_source: 06-classroom-create-repos
 permalink: /docs/classroom/create-repos
 
-title: "`create-repos`"
+title: "`make-repos`"
 ---
 
 Usage:

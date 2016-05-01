@@ -3,7 +3,7 @@ layout: doc-page
 doc_source: 07-classroom-create-teams
 permalink: /docs/classroom/teams
 
-title: "`update-teams`"
+title: "`make-teams`"
 ---
 
 Usage:
