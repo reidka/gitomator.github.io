@@ -3,7 +3,7 @@ layout: doc-page
 doc_source: 11-classroom-auto-mark
 permalink: /docs/classroom/auto-mark
 
-title: "Docker-based auto-marker"
+title: "`auto-mark`"
 ---
 
 TODO: Write this page ...
