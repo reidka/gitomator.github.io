@@ -1,7 +1,7 @@
 ---
 layout: doc-page
-doc_source: 06-classroom-create-repos
-permalink: /docs/classroom/create-repos
+doc_source: 06-make-repos
+permalink: /docs/classroom/make-repos
 
 title: "`make-repos`"
 ---
@@ -9,7 +9,7 @@ title: "`make-repos`"
 Usage:
 
 ```sh
- $ bin/task/create-repos CONFIG
+ $ bin/task/make-repos ASSIGNMENT-CONFIG
 ```
 
 ### Minimal configuration

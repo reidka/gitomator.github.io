@@ -1,6 +1,6 @@
 ---
 layout: doc-page
-doc_source: 08-classroom-access-permissions
+doc_source: 08-make-access-permissions
 permalink: /docs/classroom/access-permissions
 
 title: "`make-access-permissions`"
@@ -11,7 +11,7 @@ Set who (user or team) has what permissions (e.g. read or write) to which repo.
 Usage:
 
 ```sh
- $ bin/task/update-access-permissions CONFIG
+ $ bin/task/make-access-permissions CONFIG
 ```
 
 ### Minimal configuration

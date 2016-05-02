@@ -1,6 +1,6 @@
 ---
 layout: doc-page
-doc_source: 07-classroom-create-teams
+doc_source: 07-make-teams
 permalink: /docs/classroom/teams
 
 title: "`make-teams`"
@@ -9,7 +9,7 @@ title: "`make-teams`"
 Usage:
 
 ```sh
- $ bin/task/update-teams TEAMS-CONFIG
+ $ bin/task/make-teams TEAMS-CONFIG
 ```
 
 ### Minimal configuration
