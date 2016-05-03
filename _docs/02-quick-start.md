@@ -32,6 +32,10 @@ hosting:
  > If you're on Windows, you should create the `.gitomator` file in your home
    directory (which is probably `ROOT\Users\<YOUR-USERNAME>`).
 
+ > _Tip:_ You can configure Gitomator to use your [access token](https://github.com/blog/1509-personal-api-tokens)
+   instead of username and password. In either case, you should keep the token/password
+   private.
+
 ## Setup
 
 Open a terminal window, and clone the code:

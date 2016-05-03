@@ -9,84 +9,44 @@ excerpt: "The main concepts behind Gitomator"
 
 `gitomator-classroom` is a set of simple command-line tools.        
 
+## Tools
+
+ * `bin/task`       
+   General-purpose automation tasks. For example: Creating repos, updating team
+   memberships and setting access permissions.         
+   Use the `--help` to get more info about each command.
+ * `bin/console`           
+   Starts the IRB (Ruby interactive shell) with a few convenient variables and methods loaded.
+ * `bin/workflow`         
+   Full workflow automation. For example: Publishing an assignment.         
+   These tools are meant to be purpose-specific, and will most likely involve
+   a few automation tasks composed together somehow.
+
+
 ## YAML configuration files
 
 Configuration and data are provided as [YAML](http://yaml.org/) text files.
-YAML is "a human friendly data serialization standard". In other words,
-it's nicer-looking JSON.
+YAML is "a human friendly data serialization standard". For our purposes, you
+can think of it as a "nicer-looking JSON".
 
-* Text files are a good "lowest common denominator".  
+Why YAML?
+
+ * Text files are a good "lowest common denominator".  
    * Easy to generate and/or edit.
-   * Don't require any specific database software.
-* Easy to handle special cases by re-running a task with a different config file.
-   * Ex: Run auto-marker with a different deadline for students who
-  require time extension.
-* No need to "learn YAML", it's designed to be easy-to-read by human.
+   * Don't require any special software.
+ * YAML is easy to read.
 
+To see the various configuration files that Gitomator uses see
+[this section of the docs](/docs/classroom/config-files).
 
-## Pluggable services
+## Getting Started With GitHub
 
-Gitomator defines high-level API's for accessing various services. For example:
-
- * `hosting` service, for hosting Git repositories (e.g GitHub, BitBucket, GitLab, your plain old file server)
- * `ci` service, for managing Continuous Integration builds (e.g. Travis CI, Shippable, Drone.io)
-
-
-Service providers are defined in a configuration file.
-
-The following file configures Gitomator to use GitHub and Travis CI, with credentials loaded from environment variables.
-
-```yaml
-hosting:
-  provider: github
-  access_token: <%= ENV['GITHUB_ACCESS_TOKEN'] %>
-  organization: <%= ENV['GITHUB_ORG'] %>
-
-ci:
-  provider: travis
-  github_access_token: <%= ENV['GITHUB_ACCESS_TOKEN'] %>
-  github_organization: <%= ENV['GITHUB_ORG'] %>
-```
-
- > _Note:_ The `<%= %>` syntax are [ERB](http://www.stuartellis.eu/articles/erb/) (embedded Ruby) tags.
-
-## Data as declarative configuration
-
-Consider the following YAML file, that can be used with the `create-repos` command-line tool:
-
-```yaml
-repos:
- - repo1
- - repo2
- - repo3
-```
-
-As a human, you can interpret this file in two different ways:
-
- 1. Procedural (e.g _Create the repositories `repo1`, `repo2` and `repo3`_), where you interpret the file as a sequence of instructions.
- 2. Declarative (e.g. _Make sure that the repos `repo1`, `repo2` and `repo3` exist_), where you interpret the file as "a state of the world".
-
-The difference may seem subtle,
-but thinking declaratively simplifies our reasoning about automation tasks, as they become more complex.
-For example:
-
-
-```yaml
-source_repo: starter-code
-repos:
- - repo1: Alice
- - repo2: Bob
- - repo3: Charlie
-```
-
-By thinking of the YAML above as a "state of the world":
-
- 1. Repos (`repo1`, `repo2` and `repo3`)
- 2. Their content (commits from the `starter-code` repo)
- 3. Which user has access to which repo
-
-We abstract away procedural details, such as:
-
- * Check if a repo exists, before trying to create it.
- * If a repo exists, check if there are new commits from `starter-code` that should be pushed to that repo.
- * Check existing access permissions, they might need to be removed or updated.
+ 1. Create a [GitHub organization](https://help.github.com/articles/creating-a-new-organization-account/)
+ 2. [Request a discounted/free plan for educational use](https://education.github.com/discount_requests/new).       
+   _Note:_ You can start using Gitomator before getting your discount, you just won't be able to create private repos.
+ 3. **Important:** In your organization's settings page, go to the **member privileges**
+    section and set the **default repository permission** to None.     
+    (Otherwise, every students will be able to see every repo in the organization).
+ 4. _Suggestion:_ Make one of your colleagues an organization owner.         
+    (Extremely useful for cases where one of you cannot access their account or
+     accidentally loses their owner privileges)
