@@ -57,8 +57,6 @@ OK, you're ready to go.
 Create the file `repos.yml`:
 
 ```yaml
-name: fake-assignment
-source_repo: gitomator/gitomator-classroom
 repos:
   - gitomator-test-repo-1
   - gitomator-test-repo-2
@@ -68,16 +66,65 @@ repos:
 And run the following command:
 
 ```sh
-$ bin/task/create_repos repos.yml
+$ bin/task/make-repos repos.yml
 ```
 
-You will see informative log messages printed to the console.
-
-When the script is done, go to the repositories page of your GitHub organization (at `https://github.com/YOUR-GITHUB-ORGANIZATION`).
+The script will print informative log messages to the console.
+When it's done, go to your GitHub organization page.
 You should see 3 new repositories.
 
-Notice that the repos are not empty. Each repo contains all the commits from (the `master` branch of)
-[`gitomator/gitomator-classroom`](https://github.com/gitomator/gitomator-classroom).
+## Specify `source_repo`
+
+Notice that the repositories that we created are empty.
+In many cases, you want to create new repositories with some initial code (e.g.
+code provided to students as the starting point of an assignment).
+
+You can do that by specifying a `source_repo`, in the config file.        
+For example, change `repos.yml` to
+
+```yaml
+source_repo: gitomator/gitomator-classroom
+repos:
+  - gitomator-test-repo-1
+  - gitomator-test-repo-2
+  - gitomator-test-repo-3
+```
+
+And run the command
+
+```sh
+$ bin/task/make-repos -u repos.yml
+```
+
+The `-u` option tells Gitomator to update (i.e. push commits from the source
+repo) repos that already exist. That is, the `make-repos` command can be used to
+create as well as update repositories.
+
+ > Run `bin/task/make-repos --help` for more info command-line options.
+
+
+## Specify `create_opts`
+
+By default, repositories are created public.
+If you want the repositories to be private, you can specify it in the config file:
+
+```yaml
+source_repo: gitomator/gitomator-classroom
+
+create_opts:
+  private: true
+
+repos:
+  - gitomator-test-repo-4
+  - gitomator-test-repo-5
+  - gitomator-test-repo-6
+```
+
+To see all supported `create_opts`, see the [example config files](/docs/classroom/config-files).
+
+ > _Note:_ In order to create private repos, your GitHub organization must have
+ private repositories enabled (i.e. you're on one of the paid plans, or you were
+ approved for an educational discount).
 
 ## Delete the repositories
 
