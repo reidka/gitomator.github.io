@@ -18,8 +18,8 @@ Make sure your have:
 
 ## Create `~/.gitomator`
 
-Create the file `~/.gitomator`, containing your credentials and
-the name of your GitHub organization:
+Create the file `.gitomator` in your home directory.      
+This file contains your credentials and the name of your GitHub organization:
 
 ```yaml
 hosting:
@@ -29,8 +29,7 @@ hosting:
   organization: YOUR-GITHUB-ORGANIZATION
 ```
 
- > If you're on Windows, you should create the `.gitomator` file in your home
-   directory (which is probably `ROOT\Users\<YOUR-USERNAME>`).
+ > On Windows, your home directory is probably `ROOT\Users\<YOUR-USERNAME>`.
 
  > _Tip:_ You can configure Gitomator to use your [access token](https://github.com/blog/1509-personal-api-tokens)
    instead of username and password. In either case, you should keep the token/password
