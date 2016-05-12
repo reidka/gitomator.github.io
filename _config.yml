@@ -11,8 +11,7 @@ title                    : "Gitomator"
 title_separator          : "-"
 name                     : "Joey Freund"
 description              : "Automation tools for software educator"
-# TODO: Uncomment the `url`
-url                      : #"https://gitomator.github.io"
+url                      : "https://gitomator.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -51,9 +50,8 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id          :
+  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
+    tracking_id          : "UA-77664656-1"
 
 # Google AdSense
 google_ad_client         :
@@ -62,7 +60,7 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Gitomator"
+  name             : "Joey Freund"
   avatar           : "logo.png"
   bio              : "Built for software educators, by software educators"
   location         : #"Somewhere"
