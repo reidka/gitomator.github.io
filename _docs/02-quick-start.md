@@ -103,7 +103,7 @@ create as well as update repositories.
  > Run `bin/task/make-repos --help` for more info command-line options.
 
 
-## Specify `create_opts`
+## Specify `repo_properties`
 
 By default, repositories are created public.
 If you want the repositories to be private, you can specify it in the config file:
@@ -111,7 +111,7 @@ If you want the repositories to be private, you can specify it in the config fil
 ```yaml
 source_repo: gitomator/gitomator-classroom
 
-create_opts:
+repo_properties:
   private: true
 
 repos:
@@ -120,7 +120,7 @@ repos:
   - gitomator-test-repo-6
 ```
 
-To see all supported `create_opts`, see the [example config files](/docs/classroom/config-files).
+To see all supported `repo_properties`, see the [example config files](/docs/classroom/config-files).
 
  > _Note:_ In order to create private repos, your GitHub organization must have
  private repositories enabled (i.e. you're on one of the paid plans, or you were
