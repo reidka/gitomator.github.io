@@ -52,6 +52,8 @@ $ bin/setup
 
 OK, you're ready to go.
 
+ > *Note:* If you're on OSX El-Captiran and having trouble installing Nokogiri (one of the dependecies), please [read this issue](https://github.com/gitomator/gitomator-classroom/issues/6).
+
 ## Create some repositories
 
 Create the file `repos.yml`:
