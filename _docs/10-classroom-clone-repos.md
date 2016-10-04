@@ -11,7 +11,7 @@ Clone repos to a local directory on your machine.
 Usage:
 
 ```sh
- $ bin/task/update-access-permissions ASSIGNMENT-CONFIG LOCAL-DIR
+ $ bin/task/clone-repos ASSIGNMENT-CONFIG LOCAL-DIR
 ```
 
 ### Minimal configuration
